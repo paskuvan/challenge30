@@ -274,3 +274,208 @@ Processing by HistoriesController#new as HTML
 Completed 200 OK in 84ms (Views: 55.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-23 14:12:20 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HistoriesController#index as HTML
+  Rendering histories/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.3ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  Rendered histories/index.html.erb within layouts/application (11.2ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 651ms (Views: 616.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/histories/new" for 127.0.0.1 at 2019-02-23 14:12:26 -0300
+Processing by HistoriesController#new as HTML
+  Rendering histories/new.html.erb within layouts/application
+  Rendered histories/_form.html.erb (52.4ms)
+  Rendered histories/new.html.erb within layouts/application (56.4ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 109ms (Views: 94.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/histories" for 127.0.0.1 at 2019-02-23 14:12:55 -0300
+Processing by HistoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"caYEcSasOTD80rF0KDuaMQRNo4cCtBo1wTMUqLe99H0V2J7SKkoj+w0Wsve4rZSZCLtYBbFZgCC/fOwmRSIyJQ==", "history"=>{"title"=>"Im learning RoR", "remote_picture_url"=>"https://www.waketech.edu/sites/default/files/styles/16x9_md_1_400_x_265_/public/program-images/16x9/ComputerProgramming16x9.jpg?itok=-vW5jWc3", "picture_cache"=>"", "content"=>"I'm resolving the fixes in challenge30"}, "commit"=>"Enviar"}
+Unpermitted parameter: :picture_cache
+Completed 500 Internal Server Error in 2038ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `current_user' for #<#<Class:0x00007f987bae9000>:0x00007f987f151368>
+Did you mean?  current_page?):
+  
+app/controllers/histories_controller.rb:28:in `create'
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-23 14:15:19 -0300
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  
+app/controllers/users_controller.rb:3:in `new'
+Started GET "/" for 127.0.0.1 at 2019-02-23 14:16:45 -0300
+Processing by HistoriesController#index as HTML
+  Rendering histories/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.3ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  Rendered histories/index.html.erb within layouts/application (3.6ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 438ms (Views: 364.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-23 14:17:20 -0300
+Processing by HistoriesController#index as HTML
+  Rendering histories/index.html.erb within layouts/application
+  [1m[36mHistory Load (0.2ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  Rendered histories/index.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 49ms (Views: 45.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/histories/new" for 127.0.0.1 at 2019-02-23 14:42:40 -0300
+Processing by HistoriesController#new as HTML
+  Rendering histories/new.html.erb within layouts/application
+  Rendered histories/_form.html.erb (18.5ms)
+  Rendered histories/new.html.erb within layouts/application (64.6ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 307ms (Views: 257.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/histories" for 127.0.0.1 at 2019-02-23 14:43:05 -0300
+Processing by HistoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4khDG7lztHExYI4zPE9mQrbdV8ZZt+JY8TWavTL9U4qGNtm4tZWuusCkjbCs2WjquiusROpaeE2PemIzwGKV0g==", "history"=>{"title"=>"Im learning RoR", "remote_picture_url"=>"https://www.waketech.edu/sites/default/files/styles/16x9_md_1_400_x_265_/public/program-images/16x9/ComputerProgramming16x9.jpg?itok=-vW5jWc3", "picture_cache"=>"", "content"=>"I'm resolving the fixes in challenge30."}, "commit"=>"Enviar"}
+Unpermitted parameter: :picture_cache
+Completed 500 Internal Server Error in 2758ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `current_user' for #<#<Class:0x00007f987bae9000>:0x00007f987f84a200>
+Did you mean?  current_page?):
+  
+app/controllers/histories_controller.rb:28:in `create'
+Started POST "/histories" for 127.0.0.1 at 2019-02-23 14:43:43 -0300
+Processing by HistoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4khDG7lztHExYI4zPE9mQrbdV8ZZt+JY8TWavTL9U4qGNtm4tZWuusCkjbCs2WjquiusROpaeE2PemIzwGKV0g==", "history"=>{"title"=>"Im learning RoR", "remote_picture_url"=>"https://www.waketech.edu/sites/default/files/styles/16x9_md_1_400_x_265_/public/program-images/16x9/ComputerProgramming16x9.jpg?itok=-vW5jWc3", "picture_cache"=>"", "content"=>"I'm resolving the fixes in challenge30."}, "commit"=>"Enviar"}
+Unpermitted parameter: :picture_cache
+Completed 500 Internal Server Error in 2634ms (ActiveRecord: 1.7ms)
+
+
+  
+NoMethodError (undefined method `current_page' for #<#<Class:0x00007f987cf18850>:0x00007f987cf12ba8>
+Did you mean?  current_page?):
+  
+app/controllers/histories_controller.rb:28:in `create'
+Started POST "/__web_console/repl_sessions/938692bbe2d90c6ea777e7888ac9e691/trace" for 127.0.0.1 at 2019-02-23 14:43:57 -0300
+Started POST "/histories" for 127.0.0.1 at 2019-02-23 14:44:44 -0300
+Processing by HistoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4khDG7lztHExYI4zPE9mQrbdV8ZZt+JY8TWavTL9U4qGNtm4tZWuusCkjbCs2WjquiusROpaeE2PemIzwGKV0g==", "history"=>{"title"=>"Im learning RoR", "remote_picture_url"=>"https://www.waketech.edu/sites/default/files/styles/16x9_md_1_400_x_265_/public/program-images/16x9/ComputerProgramming16x9.jpg?itok=-vW5jWc3", "picture_cache"=>"", "content"=>"I'm resolving the fixes in challenge30."}, "commit"=>"Enviar"}
+Unpermitted parameter: :picture_cache
+Completed 500 Internal Server Error in 1826ms (ActiveRecord: 1.6ms)
+
+
+  
+NoMethodError (undefined method `current_user' for #<#<Class:0x00007f987f3431d0>:0x00007f987f341588>
+Did you mean?  current_page?):
+  
+app/controllers/histories_controller.rb:28:in `create'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/histories" for 127.0.0.1 at 2019-02-23 14:49:21 -0300
+Processing by HistoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4khDG7lztHExYI4zPE9mQrbdV8ZZt+JY8TWavTL9U4qGNtm4tZWuusCkjbCs2WjquiusROpaeE2PemIzwGKV0g==", "history"=>{"title"=>"Im learning RoR", "remote_picture_url"=>"https://www.waketech.edu/sites/default/files/styles/16x9_md_1_400_x_265_/public/program-images/16x9/ComputerProgramming16x9.jpg?itok=-vW5jWc3", "picture_cache"=>"", "content"=>"I'm resolving the fixes in challenge30."}, "commit"=>"Enviar"}
+Unpermitted parameter: :picture_cache
+Completed 500 Internal Server Error in 2713ms (ActiveRecord: 1.8ms)
+
+
+  
+NoMethodError (undefined method `current_user' for #<#<Class:0x00007f987e0d2398>:0x00007f987e0c9f68>
+Did you mean?  current_page?):
+  
+app/controllers/histories_controller.rb:28:in `create'
+Started GET "/" for 127.0.0.1 at 2019-02-23 15:23:37 -0300
+  [1m[35m (21.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HistoriesController#index as HTML
+  Rendering histories/index.html.erb within layouts/application
+  [1m[36mHistory Load (12.1ms)[0m  [1m[34mSELECT "histories".* FROM "histories"[0m
+  Rendered histories/index.html.erb within layouts/application (18.3ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 763ms (Views: 647.9ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/histories/new" for 127.0.0.1 at 2019-02-23 15:23:41 -0300
+Processing by HistoriesController#new as HTML
+  Rendering histories/new.html.erb within layouts/application
+  Rendered histories/_form.html.erb (80.9ms)
+  Rendered histories/new.html.erb within layouts/application (95.5ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 162ms (Views: 140.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/histories" for 127.0.0.1 at 2019-02-23 15:24:00 -0300
+Processing by HistoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6zOdRXePj86ObIe5Wgf2CXZ66DRa/PDvk4TELe7zLSiPTQfme2mVBX+ohDrKkfiheowTtukRavrtyzyjHGzrcA==", "history"=>{"title"=>"Im learning RoR", "remote_picture_url"=>"https://www.waketech.edu/sites/default/files/styles/16x9_md_1_400_x_265_/public/program-images/16x9/ComputerProgramming16x9.jpg?itok=-vW5jWc3", "picture_cache"=>"", "content"=>"I'm resolving the fixes in challenge30."}, "commit"=>"Enviar"}
+Unpermitted parameter: :picture_cache
+Completed 500 Internal Server Error in 2614ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `current_user' for #<#<Class:0x00007fe05c41a660>:0x00007fe05f978550>
+Did you mean?  current_page?):
+  
+app/controllers/histories_controller.rb:28:in `create'
+Started POST "/__web_console/repl_sessions/d1f82f17c596d6b020f26d235065e752/trace" for 127.0.0.1 at 2019-02-23 15:24:16 -0300
+Started POST "/histories" for 127.0.0.1 at 2019-02-23 15:25:09 -0300
+Processing by HistoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6zOdRXePj86ObIe5Wgf2CXZ66DRa/PDvk4TELe7zLSiPTQfme2mVBX+ohDrKkfiheowTtukRavrtyzyjHGzrcA==", "history"=>{"title"=>"Im learning RoR", "remote_picture_url"=>"https://www.waketech.edu/sites/default/files/styles/16x9_md_1_400_x_265_/public/program-images/16x9/ComputerProgramming16x9.jpg?itok=-vW5jWc3", "picture_cache"=>"", "content"=>"I'm resolving the fixes in challenge30."}, "commit"=>"Enviar"}
+Unpermitted parameter: :picture_cache
+Completed 500 Internal Server Error in 1880ms (ActiveRecord: 1.9ms)
+
+
+  
+NoMethodError (undefined method `current_user' for #<#<Class:0x00007fe05daa87d8>:0x00007fe05da981a8>
+Did you mean?  current_page?):
+  
+app/controllers/histories_controller.rb:28:in `create'
+Started POST "/histories" for 127.0.0.1 at 2019-02-23 15:25:35 -0300
+  
+SyntaxError (/Users/cote/Desktop/challenge30/app/controllers/histories_controller.rb:79: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/histories_controller.rb:79: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/histories" for 127.0.0.1 at 2019-02-23 15:25:46 -0300
+Processing by HistoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6zOdRXePj86ObIe5Wgf2CXZ66DRa/PDvk4TELe7zLSiPTQfme2mVBX+ohDrKkfiheowTtukRavrtyzyjHGzrcA==", "history"=>{"title"=>"Im learning RoR", "remote_picture_url"=>"https://www.waketech.edu/sites/default/files/styles/16x9_md_1_400_x_265_/public/program-images/16x9/ComputerProgramming16x9.jpg?itok=-vW5jWc3", "picture_cache"=>"", "content"=>"I'm resolving the fixes in challenge30."}, "commit"=>"Enviar"}
+Unpermitted parameter: :picture_cache
+Completed 500 Internal Server Error in 3942ms (ActiveRecord: 1.9ms)
+
+
+  
+NoMethodError (undefined method `current_user' for #<#<Class:0x00007fe05dd80d98>:0x00007fe05eec1f30>
+Did you mean?  current_page?):
+  
+app/controllers/histories_controller.rb:30:in `create'
+Started POST "/histories" for 127.0.0.1 at 2019-02-23 15:27:05 -0300
+Processing by HistoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6zOdRXePj86ObIe5Wgf2CXZ66DRa/PDvk4TELe7zLSiPTQfme2mVBX+ohDrKkfiheowTtukRavrtyzyjHGzrcA==", "history"=>{"title"=>"Im learning RoR", "remote_picture_url"=>"https://www.waketech.edu/sites/default/files/styles/16x9_md_1_400_x_265_/public/program-images/16x9/ComputerProgramming16x9.jpg?itok=-vW5jWc3", "picture_cache"=>"", "content"=>"I'm resolving the fixes in challenge30."}, "commit"=>"Enviar"}
+Unpermitted parameter: :picture_cache
+Completed 500 Internal Server Error in 1875ms (ActiveRecord: 8.0ms)
+
+
+  
+NameError (undefined local variable or method `current_user' for #<HistoriesController:0x00007fe05d95b9e8>):
+  
+app/controllers/histories_controller.rb:30:in `create'
+Started POST "/histories" for 127.0.0.1 at 2019-02-23 15:28:09 -0300
+Processing by HistoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6zOdRXePj86ObIe5Wgf2CXZ66DRa/PDvk4TELe7zLSiPTQfme2mVBX+ohDrKkfiheowTtukRavrtyzyjHGzrcA==", "history"=>{"title"=>"Im learning RoR", "remote_picture_url"=>"https://www.waketech.edu/sites/default/files/styles/16x9_md_1_400_x_265_/public/program-images/16x9/ComputerProgramming16x9.jpg?itok=-vW5jWc3", "picture_cache"=>"", "content"=>"I'm resolving the fixes in challenge30."}, "commit"=>"Enviar"}
+Unpermitted parameter: :picture_cache
+Completed 500 Internal Server Error in 1930ms (ActiveRecord: 1.9ms)
+
+
+  
+NoMethodError (undefined method `current_user' for #<#<Class:0x00007fe0600ab610>:0x00007fe0600a99f0>
+Did you mean?  current_page?):
+  
+app/controllers/histories_controller.rb:30:in `create'

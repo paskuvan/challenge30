@@ -21,6 +21,8 @@ class HistoriesController < ApplicationController
   def edit
   end
 
+  
+
   # POST /histories
   # POST /histories.json
   def create
