@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :histories
 
   get 'users/sign_up', to: "users#new"

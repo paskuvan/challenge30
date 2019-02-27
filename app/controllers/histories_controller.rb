@@ -21,13 +21,11 @@ class HistoriesController < ApplicationController
   def edit
   end
 
-  
-
   # POST /histories
   # POST /histories.json
   def create
     @history = History.new(history_params)
-    @history.user = helpers.current_user
+    @history.user = current_user
     respond_to do |format|
       if @history.save
         format.html { redirect_to @history, notice: 'History was successfully created.' }
